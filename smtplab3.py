@@ -13,10 +13,10 @@ endmsg = '\r\n.\r\n'
 mailServer = ("smtp.gmail.com", 587)
 
 # Create socket called clientSocket and establish a TCP connection with mailserver
-#Fill in start
+
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect(mailServer)
-#Fill in end
+
 
 recv = clientSocket.recv(1024).decode()
 print(recv)
